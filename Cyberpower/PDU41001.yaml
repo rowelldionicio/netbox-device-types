@@ -1,0 +1,92 @@
+manufacturer: CyberPower
+model: PDU41001
+slug: cyberpower-pdu41001
+description: ''
+default_platform: null
+part_number: PDU41001
+u_height: 1.0
+is_full_depth: false
+subdevice_role: ''
+airflow: ''
+weight: null
+weight_unit: ''
+comments: https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower_DS_PDU41001.pdf
+power-ports:
+- name: Power Port 1
+  type: nema-5-15p
+  maximum_draw: null
+  allocated_draw: null
+  label: ''
+  description: ''
+power-outlets:
+- name: Front Outlet 1
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Front Outlet 2
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 1
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 2
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 3
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 4
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 5
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 6
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 7
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 8
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+interfaces:
+- name: eth0
+  type: 1000base-t
+  enabled: true
+  mgmt_only: false
+  label: '1'
+  description: ''
+  bridge: null
+  poe_mode: ''
+  poe_type: ''
+  rf_role: ''
