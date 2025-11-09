@@ -1,0 +1,81 @@
+manufacturer: CyberPower
+model: CPS1215RM
+slug: cyberpower-cps1215rm
+description: ''
+default_platform: null
+part_number: ''
+u_height: 1.0
+is_full_depth: false
+subdevice_role: ''
+airflow: ''
+weight: 5.0
+weight_unit: lb
+comments: ''
+power-ports:
+- name: Power Port 1
+  type: nema-5-15p
+  maximum_draw: null
+  allocated_draw: null
+  label: ''
+  description: ''
+power-outlets:
+- name: Rear Outlet 1
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 2
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 3
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 4
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 5
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 6
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 7
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 8
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 9
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Rear Outlet 10
+  type: nema-5-15r
+  power_port: Power Port 1
+  feed_leg: ''
+  label: ''
+  description: ''
