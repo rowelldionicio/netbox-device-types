@@ -1,0 +1,93 @@
+manufacturer: CyberPower
+model: OR1500LCDRTXL2U
+slug: cyberpower-or1500lcdrtxl2u
+description: ''
+default_platform: null
+part_number: ''
+u_height: 2.0
+is_full_depth: true
+subdevice_role: ''
+airflow: ''
+weight: null
+weight_unit: ''
+comments: ''
+console-ports:
+- name: Serial Port I
+  type: de-9
+  label: ''
+  description: ''
+- name: Serial Port II
+  type: de-9
+  label: ''
+  description: ''
+- name: USB
+  type: usb-b
+  label: ''
+  description: ''
+power-ports:
+- name: AC Input
+  type: nema-5-15p
+  maximum_draw: 1125
+  allocated_draw: null
+  label: ''
+  description: ''
+power-outlets:
+- name: Left Bottom 1
+  type: nema-5-15r
+  power_port: AC Input
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Left Bottom 2
+  type: nema-5-15r
+  power_port: AC Input
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Left Top 1
+  type: nema-5-15r
+  power_port: AC Input
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Left Top 2
+  type: nema-5-15r
+  power_port: AC Input
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Right Bottom 1
+  type: nema-5-15r
+  power_port: AC Input
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Right Bottom 2
+  type: nema-5-15r
+  power_port: AC Input
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Right Top 1
+  type: nema-5-15r
+  power_port: AC Input
+  feed_leg: ''
+  label: ''
+  description: ''
+- name: Right Top 2
+  type: nema-5-15r
+  power_port: AC Input
+  feed_leg: ''
+  label: ''
+  description: ''
+interfaces:
+- name: eth0
+  type: 1000base-t
+  enabled: true
+  mgmt_only: false
+  label: '1'
+  description: ''
+  bridge: null
+  poe_mode: ''
+  poe_type: ''
+  rf_role: ''
