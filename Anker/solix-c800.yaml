@@ -4,30 +4,13 @@ slug: anker-solix-c800
 description: 'Battery Backup/UPS'
 default_platform: null
 part_number: ''
-u_height: ''
+u_height: 0.0
 is_full_depth: false
 subdevice_role: ''
 airflow: ''
-weight: 24lbs
-weight_unit: ''
+weight: 24
+weight_unit: lb
 comments: ''
-console-ports:
-- name: USB
-  type: usb-c
-  label: ''
-  description: ''
-- name: USB
-  type: usb-c
-  label: ''
-  description: ''
-- name: USB
-  type: usb-a
-  label: ''
-  description: ''
-- name: USB
-  type: usb-a
-  label: ''
-  description: ''
 power-ports:
 - name: AC Input
   type: nema-5-15p
