@@ -4,7 +4,7 @@ slug: ericsson-cradlepoint-e300
 description: '5G/LTE enterprise desktop router with Wi-Fi 6, 5x GbE, and 1x 10GbE SFP+'
 default_platform: null
 part_number: ''
-u_height: 0
+u_height: 1
 is_full_depth: false
 subdevice_role: ''
 airflow: ''
