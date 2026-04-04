@@ -8,7 +8,7 @@ u_height: 0
 is_full_depth: false
 subdevice_role: ''
 airflow: ''
-weight: 1.875
+weight: 1.87
 weight_unit: lb
 comments: '[E300 Series Datasheet](https://cradlepoint.com/datasheet/e300-series-enterprise-router/)
 
