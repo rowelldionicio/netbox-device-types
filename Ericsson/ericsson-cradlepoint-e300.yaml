@@ -1,0 +1,117 @@
+manufacturer: Ericsson
+model: Cradlepoint E300
+slug: ericsson-cradlepoint-e300
+description: '5G/LTE enterprise desktop router with Wi-Fi 6, 5x GbE, and 1x 10GbE SFP+'
+default_platform: null
+part_number: ''
+u_height: 0
+is_full_depth: false
+subdevice_role: ''
+airflow: ''
+weight: 1.875
+weight_unit: lb
+comments: '[E300 Series Datasheet](https://cradlepoint.com/datasheet/e300-series-enterprise-router/)
+
+  Dimensions: 135 x 270 x 44 mm (5.3 x 10.6 x 1.7 in)
+
+  Power: External adapter 100-240 VAC 1A → 12 VDC 3A | Idle: 9W | Typical: 13W | Max: 17W
+
+  Dual SIM slots (2FF). Supports MC20BT Bluetooth LE expansion module.
+
+  Modem variants: E300-C18B (Cat 18, 4x SMA), E300-5GB (5G, 4x SMA), E300-C7C/C7D (Cat 7, 2x SMA).'
+
+power-ports:
+- name: PSU
+  type: dc-terminal
+  maximum_draw: 17
+  allocated_draw: null
+  label: ''
+  description: '12 VDC 3A input (external adapter: 100-240 VAC 1A)'
+
+interfaces:
+- name: GE1
+  type: 1000base-t
+  enabled: true
+  mgmt_only: false
+  label: ''
+  description: 'GbE RJ45 — LAN/WAN switchable'
+  bridge: null
+  poe_mode: ''
+  poe_type: ''
+  rf_role: ''
+- name: GE2
+  type: 1000base-t
+  enabled: true
+  mgmt_only: false
+  label: ''
+  description: 'GbE RJ45 — LAN/WAN switchable'
+  bridge: null
+  poe_mode: ''
+  poe_type: ''
+  rf_role: ''
+- name: GE3
+  type: 1000base-t
+  enabled: true
+  mgmt_only: false
+  label: ''
+  description: 'GbE RJ45 — LAN/WAN switchable'
+  bridge: null
+  poe_mode: ''
+  poe_type: ''
+  rf_role: ''
+- name: GE4
+  type: 1000base-t
+  enabled: true
+  mgmt_only: false
+  label: ''
+  description: 'GbE RJ45 — LAN/WAN switchable'
+  bridge: null
+  poe_mode: ''
+  poe_type: ''
+  rf_role: ''
+- name: GE5
+  type: 1000base-t
+  enabled: true
+  mgmt_only: false
+  label: ''
+  description: 'GbE RJ45 — LAN/WAN switchable'
+  bridge: null
+  poe_mode: ''
+  poe_type: ''
+  rf_role: ''
+- name: SFP+1
+  type: 10gbase-x-sfpp
+  enabled: true
+  mgmt_only: false
+  label: ''
+  description: '10GbE SFP+ — LAN/WAN switchable'
+  bridge: null
+  poe_mode: ''
+  poe_type: ''
+  rf_role: ''
+- name: WiFi 2.4GHz
+  type: ieee802.11ax
+  enabled: true
+  mgmt_only: false
+  label: ''
+  description: '802.11ax (Wi-Fi 6) 2x2 MU-MIMO — 574 Mbps max'
+  bridge: null
+  poe_mode: ''
+  poe_type: ''
+  rf_role: 'ap'
+- name: WiFi 5GHz
+  type: ieee802.11ax
+  enabled: true
+  mgmt_only: false
+  label: ''
+  description: '802.11ax (Wi-Fi 6) 2x2 MU-MIMO — 1,200 Mbps max'
+  bridge: null
+  poe_mode: ''
+  poe_type: ''
+  rf_role: 'ap'
+
+module-bays:
+- name: MC400 Modem Slot
+  label: ''
+  description: 'Modular modem expansion slot — supports MC400 series (Cat 7/Cat 18/5G); 300 Mbps peak throughput'
+  position: ''
