@@ -1,0 +1,40 @@
+---
+manufacturer: NVIDIA
+model: DGX Spark
+slug: nvidia-dgx-spark
+part_number: ''
+u_height: 0
+is_full_depth: false
+weight: 1.2
+weight_unit: kg
+comments: >-
+  Compact desktop AI supercomputer powered by the NVIDIA GB10 Grace Blackwell Superchip.
+  CPU: 20-core Arm (10x Cortex-X925 + 10x Cortex-A725). GPU: NVIDIA Blackwell with
+  5th-gen Tensor Cores and 4th-gen RT Cores. System memory: 128 GB coherent unified
+  LPDDR5x (256-bit, up to 273 GB/s). Storage: 4 TB NVMe M.2 with self-encryption.
+  AI performance: up to 1 PFLOP FP4. Supports models up to 200B parameters (FP4);
+  two units linked via ConnectX-7 support up to 405B parameters.
+  Dimensions: 150 mm L x 150 mm W x 50.5 mm H. Power: 240 W. OS: NVIDIA DGX OS (Ubuntu Linux).
+  Source: NVIDIA DGX Spark Datasheet (Mar 2026). Specs are preliminary and subject to change.
+
+interfaces:
+  - name: eth0
+    type: 10gbase-t
+    mgmt_only: false
+    description: 10GbE Ethernet (RJ-45)
+
+  - name: connectx7-0
+    type: 200gbase-x-qsfp56
+    mgmt_only: false
+    description: NVIDIA ConnectX-7 NIC, 200 Gbps — used to link two DGX Spark units
+
+  - name: wifi0
+    type: ieee802.11be
+    mgmt_only: false
+    description: WiFi 7 (802.11be)
+
+power-ports:
+  - name: PSU
+    type: iec-60320-c14
+    maximum_draw: 240
+    allocated_draw: 240
