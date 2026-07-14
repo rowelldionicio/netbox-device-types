@@ -1,0 +1,39 @@
+---
+manufacturer: Juniper Networks
+model: AP24
+slug: mist-ap24
+part_number: AP24-US, AP24-WW
+u_height: 0
+is_full_depth: false
+weight: 0.75
+weight_unit: kg
+airflow: passive
+description: >-
+  Juniper Mist AP24 tri-band Wi-Fi 6E (802.11ax) access point.
+  Dual-band, 2x2:2 client radios plus a dedicated third scanning
+  radio (WIDS/WIPS, spectrum analysis, location). Indoor deployment.
+comments: |
+  Wi-Fi Standard: 802.11ax (Wi-Fi 6E), backward compatible with 802.11a/b/g/n/ac
+  Radios: tri-band, dual-band concurrent, 2x2:2 (2.4/5/6 GHz) + dedicated 1x1 scan radio
+  Max data rates: 2.4 GHz 575 Mbps | 5 GHz 1200 Mbps | 6 GHz 2400 Mbps
+  IoT radio: BLE 5.3 (multi-personality, omni antenna)
+  IoT sensors: Temperature, Accelerometer
+  USB: USB 2.0, 900 mA output
+  Power: PoE PD; 802.3af provides full functionality
+  Dimensions: 185 x 185 x 39 mm
+  Operating temp: 0 to 40 C | Humidity: 10-90% non-condensing | Altitude: 3,048 m
+  Security: TPM (Trusted Platform Module)
+  SKUs: AP24-US (US, internal antenna), AP24-WW (worldwide, internal antenna)
+  Antennas: internal only (2x 2.4 GHz 4 dBi, 2x 5 GHz 6 dBi, 2x 6 GHz 6 dBi)
+  Source: AP24 Access Point Datasheet, 1000772-009-EN, July 2024
+interfaces:
+  - name: eth0
+    type: 2.5gbase-t
+    poe_mode: pd
+    poe_type: type1-ieee802.3af
+    mgmt_only: false
+    label: Eth0 100/1000/2500 Base-T (802.3bz) PoE PD
+console-ports:
+  - name: Reset
+    type: other
+    label: Factory reset button
