@@ -1,0 +1,87 @@
+---
+manufacturer: CyberPower
+model: PR2000RTXL2UC
+slug: cyberpower-pr2000rtxl2uc
+part_number: PR2000RTXL2UC
+u_height: 2
+is_full_depth: true
+weight: 74.5
+weight_unit: lb
+airflow: front-to-rear
+description: >-
+  Smart App Sinewave line-interactive 2U rack/tower UPS. 2000 VA / 2000 W, pure
+  sine wave output, AVR, 8x NEMA 5-20R outlets, EBM-capable (BP48VP2U02).
+comments: |
+  Type: Line-interactive Smart App Sinewave UPS, 2U rack/tower convertible.
+  Capacity: 2000 VA / 2000 W, output power factor 1.0.
+  Output: 100-125 VAC +/- 5%, pure sine wave. AVR: Double Boost, Single Buck. Transfer time ~4 ms.
+  Input: 120 VAC nominal (100-125 VAC), range 75-149 VAC, 47-63 Hz, 20 A breaker. Cord: NEMA 5-20P, 10 ft, right-angle 0-degree offset.
+  Runtime: 12.2 min at half load / 4.3 min at full load. Typical recharge 3 hr.
+  Battery: 4x 12 V / 9 Ah Sealed Lead-Acid, hot-swappable, user-replaceable. Replacement cartridge: 1x RB1290X4J.
+  Extended Battery Module: BP48VP2U02 (slug cyberpower-bp48vp2u02) for expanded runtime.
+  Surge/filtering: 2430 J suppression, EMI/RFI filtration.
+  Outlets: 8x NEMA 5-20R total, all battery + surge protected. Split 4 "Critical" / 4 "Non-Critical" per rear panel.
+  Management: HID USB, DB9 serial, DB9 dry contact, EPO. Optional RMCARD205 SNMP/network card in expansion slot. PowerPanel Business software. Built-in Cloud Monitoring.
+  Physical: 17.1 x 3.4 x 19.7 in (434 x 86 x 500 mm), 74.5 lb. Black metal chassis.
+  Environmental: 130 BTU/hr, 57.5 dBA at 1 m, operating 0-40 C, 0-95% RH non-condensing, max elevation 3,000 m.
+  Certifications: UL1778, CSA C22.2 No 107.3, FCC Class B, VCCI. RoHS compliant.
+  Warranty: 3-year limited, $400,000 connected-equipment guarantee. Extended warranty SKU: WEXT5YR-U4B. Country of origin: China.
+  Modeling notes: The EBM battery connector is modeled as a dc-terminal power-outlet so it pairs with the "Battery Cable" power-port on cyberpower-bp48vp2u02. Network/SNMP connectivity is delivered by the optional RMCARD205 that seats in the expansion module bay, so no built-in ethernet interface is defined.
+  Source: CyberPower PR2000RTXL2UC Smart App Sinewave UPS datasheet (c)2023.
+console-ports:
+  - name: USB
+    type: usb-b
+    label: HID-compliant USB management port
+  - name: Serial
+    type: de-9
+    label: DB9 serial port
+  - name: Dry Contact
+    type: de-9
+    label: DB9 dry-contact relay
+  - name: EPO
+    type: other
+    label: Emergency Power Off port
+power-ports:
+  - name: AC Input
+    type: nema-5-20p
+    maximum_draw: 2000
+    label: NEMA 5-20P, 10 ft cord (right-angle)
+power-outlets:
+  - name: Critical 1
+    type: nema-5-20r
+    power_port: AC Input
+    label: Critical load (battery + surge)
+  - name: Critical 2
+    type: nema-5-20r
+    power_port: AC Input
+    label: Critical load (battery + surge)
+  - name: Critical 3
+    type: nema-5-20r
+    power_port: AC Input
+    label: Critical load (battery + surge)
+  - name: Critical 4
+    type: nema-5-20r
+    power_port: AC Input
+    label: Critical load (battery + surge)
+  - name: Non-Critical 1
+    type: nema-5-20r
+    power_port: AC Input
+    label: Non-critical load (battery + surge)
+  - name: Non-Critical 2
+    type: nema-5-20r
+    power_port: AC Input
+    label: Non-critical load (battery + surge)
+  - name: Non-Critical 3
+    type: nema-5-20r
+    power_port: AC Input
+    label: Non-critical load (battery + surge)
+  - name: Non-Critical 4
+    type: nema-5-20r
+    power_port: AC Input
+    label: Non-critical load (battery + surge)
+  - name: Battery Expansion (EBM)
+    type: dc-terminal
+    label: DC battery connector to BP48VP2U02 EBM
+module-bays:
+  - name: Expansion Slot
+    label: SNMP/network card slot (RMCARD205)
