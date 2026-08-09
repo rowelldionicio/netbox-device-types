@@ -1,0 +1,32 @@
+---
+manufacturer: Cyberpower
+model: BP48VP2U02
+slug: cyberpower-bp48vp2u02
+part_number: BP48VP2U02
+u_height: 2
+is_full_depth: true
+weight: 66.2
+weight_unit: lb
+airflow: passive
+description: >-
+  Rack/tower convertible Extended Battery Module (EBM) for CyberPower Smart App
+  Sinewave PR1500/2000/2200/3000RTXL2U UPS systems.
+comments: |
+  Type: Extended Battery Module (EBM), 2U rack/tower convertible.
+  Output: 48 V / 70 A. Battery equalization + Fast Charge technology.
+  Battery: Sealed Lead-Acid, 12 V / 9 Ah, qty 8. Hot-swappable, user-replaceable, toolless panel access.
+  Replacement battery: RB1290X4J (2 replacement cartridges).
+  Charging: built-in charger, ~6 hr typical recharge.
+  Compatible UPS: PR1500RTXL2U, PR2000RTXL2U, PR2200RTXL2U, PR3000RTXL2U.
+  Dimensions (WxHxD): 17.1 x 3.4 x 19.7 in. Shipping weight: 80.7 lb.
+  Environmental: operating 0-40 C, 0-95% RH non-condensing, max elevation 3,000 m.
+  Certifications: CE, RCM, UL1778, cUL, FCC Class B, VCCI. RoHS compliant.
+  Warranty: 3-year limited.
+  Note: The datasheet spec tables do not enumerate physical ports. The single
+  power-port below represents the DC battery interconnect cable to the UPS; add
+  more only if the physical unit reveals daisy-chain/expansion connectors.
+  Source: CyberPower BP48VP2U02 Extended Battery Module datasheet (c)2018.
+power-ports:
+  - name: Battery Cable
+    type: dc-terminal
+    label: 48 V DC battery interconnect to UPS
