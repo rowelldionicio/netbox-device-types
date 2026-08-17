@@ -1,71 +1,16 @@
----
 manufacturer: Starlink
 model: Performance (Gen 3)
 slug: starlink-performance-gen3
-part_number: STLXX01126
 u_height: 0
 is_full_depth: false
-weight: 5.2
-weight_unit: kg
-airflow: passive
-description: >-
-  Starlink Performance (Gen 3) enterprise satellite terminal. Electronically
-  steered phased-array dish with a rack-mountable Advanced Power Supply
-  (AC/DC input, high-power PoE to the dish, LAN port out). IP69K, -40 to 60 C,
-  in-motion capable. Router not included; pairs with Starlink Gen 3 Router,
-  Router Mini, or a third-party router/firewall.
-comments: |
-  This device type consolidates the two physical units shipped in the
-  Performance (Gen 3) Kit: the Performance Dish and the Advanced Power Supply.
-  The dish itself has no NetBox-mappable ports (proprietary push-fit Performance
-  connector). All patchable ports live on the Advanced Power Supply and are
-  modeled below.
-
-  ANTENNA (Starlink Performance Dish)
-  Type: electronically steered phased array
-  Field of view: 140 degrees
-  Orientation: software-assisted manual orienting
-  Dimensions: 609 x 396 x 40 mm (24 x 15.6 x 1.6 in)
-  Weight: 5.2 kg (11.5 lb)
-  Environmental: IP69K (cables installed), IP68 (no cables)
-  Operating temp: -40 to 60 C (-40 to 140 F)
-  Wind: survivable 280 kph+ (174 mph+)
-  Snow melt: up to 85 mm/hour (3.5 in/hour)
-  Power consumption: 75-100 W average
-  Throughput: up to 400+ Mbps (gigabit service plans planned for 2026, no
-  hardware change)
-  Design life: 10-year mission life
-
-  ADVANCED POWER SUPPLY
-  Dimensions: 310 x 180 x 40 mm (12.2 x 7.1 x 1.6 in)
-  Weight: 2.1 kg (4.6 lb)
-  Environmental: IP68 (cables installed/plugged)
-  Operating temp: -40 to 60 C
-  Power input: 100-240 VAC, 12-56 VDC (DC input supports backup battery)
-  Features: rack-mountable, smart diagnostics, high-power PoE port, LAN port
-
-  KIT CONTENTS
-  Performance Dish, Advanced Power Supply, 25 m (82 ft) Performance cable,
-  1.5 m AC power cable, 1.5 m DC power cable, 5 m (16.4 ft) Ethernet cable.
-  Performance cable options: 5 m, 25 m (included), 50 m, 50 m LSZH.
-
-  NOTES
-  LAN port speed is not published on the datasheet; modeled as 1000base-t
-  (gigabit) as the sensible default. Adjust to 2.5gbase-t if a faster port is
-  confirmed on your unit. The dish-facing port uses Starlink's proprietary
-  high-power PoE (not IEEE 802.3), modeled as an "other" interface, PSE.
-  Source: Starlink Performance Specifications sheet (specification_sheet_performance.pdf),
-  retrieved 2026-08-17.
 interfaces:
   - name: LAN
     type: 1000base-t
-    mgmt_only: false
-    label: Advanced Power Supply LAN (Ethernet out to router/firewall)
+    label: Advanced Power Supply LAN (out to router/firewall)
   - name: Dish
     type: other
     poe_mode: pse
-    mgmt_only: false
-    label: High-power PoE to Performance Dish (proprietary connector)
+    label: High-power PoE to Performance Dish (proprietary)
 power-ports:
   - name: AC In
     type: other
