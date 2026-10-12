@@ -1,0 +1,95 @@
+---
+manufacturer: CyberPower
+model: OL1500RTXL2UN
+slug: cyberpower-ol1500rtxl2un
+part_number: OL1500RTXL2UN
+u_height: 2
+is_full_depth: true
+weight: 17.96
+weight_unit: kg
+airflow: front-to-rear
+description: 1500VA/1350W 2U online double-conversion rack/tower UPS with expansion slot for RMCARD network management card
+comments: |
+  Source: CyberPower OL1500RTXL2UN Smart App Online UPS datasheet (c)2023 Cyber Power Systems (USA), Inc.
+
+  Capacity: 1500 VA / 1350 W at 120/125 V input (1350 VA / 1215 W at 110/115 V, 1200 VA / 1080 W at 100 V)
+  Topology: Online double conversion, pure sine wave output, 0 ms transfer time
+  Output voltage: 100/110/115/120/125 VAC +/-2% (configurable)
+  Nominal input: 100-125 VAC, 15 A breaker, 10 ft cord, NEMA 5-15P
+  Runtime: 12.5 min at half load, 4 min at full load
+  Batteries: 3 x 12 V/9 Ah SLA, hot-swappable; replacement RB1290X3L
+  Extended Battery Module: BP36V60ART2U
+  Recharge: 4 hours (0% to 90%)
+  Surge suppression: 1780 J; EMI/RFI filtration; RJ11/RJ45 combo data line protection (1-In / 1-Out)
+  Management: RMCARD205 (pre-installed in expansion slot), USB (HID), Serial, Dry contacts / Relay, EPO
+  RMCARD205 is modeled as a module installed in the Expansion Slot module bay; its network and sensor ports belong to the RMCARD205 module type.
+  Software: PowerPanel Business Edition; upgradeable firmware
+  Dimensions (WxHxD): 432 x 89 x 429 mm (17 x 3.5 x 16.9 in)
+  Thermal: 478 BTU/hr online, 207 BTU/hr ECO mode
+  Operating temp: 0 to 40 C; humidity 0 to 90% non-condensing
+  Noise: 38 to 55 dBA at 1 m (0% to 100% load)
+  Warranty: 3-year limited; $400,000 lifetime Connected Equipment Guarantee; extended warranty WEXT5YR-U4A
+  Outlet banks: rear panel shows Critical Load and Non-Critical Load outlet groups (4 + 4); verify against the physical unit.
+
+module-bays:
+  - name: Expansion Slot
+    position: '1'
+    description: Network management card slot (ships with RMCARD205)
+
+console-ports:
+  - name: Serial
+    type: de-9
+  - name: USB
+    type: usb-b
+
+power-ports:
+  - name: PSU0
+    label: AC Input
+    type: nema-5-15p
+
+power-outlets:
+  - name: Outlet 1
+    type: nema-5-15r
+    power_port: PSU0
+    description: Critical load bank
+  - name: Outlet 2
+    type: nema-5-15r
+    power_port: PSU0
+    description: Critical load bank
+  - name: Outlet 3
+    type: nema-5-15r
+    power_port: PSU0
+    description: Critical load bank
+  - name: Outlet 4
+    type: nema-5-15r
+    power_port: PSU0
+    description: Critical load bank
+  - name: Outlet 5
+    type: nema-5-15r
+    power_port: PSU0
+    description: Non-critical load bank
+  - name: Outlet 6
+    type: nema-5-15r
+    power_port: PSU0
+    description: Non-critical load bank
+  - name: Outlet 7
+    type: nema-5-15r
+    power_port: PSU0
+    description: Non-critical load bank
+  - name: Outlet 8
+    type: nema-5-15r
+    power_port: PSU0
+    description: Non-critical load bank
+
+rear-ports:
+  - name: Surge In
+    type: 8p8c
+    positions: 1
+    description: RJ11/RJ45 data line surge protection input
+
+front-ports:
+  - name: Surge Out
+    type: 8p8c
+    rear_port: Surge In
+    rear_port_position: 1
+    description: RJ11/RJ45 data line surge protection output
