@@ -22,7 +22,7 @@ comments: |
   Recharge: 4 hours (0% to 90%)
   Surge suppression: 1780 J; EMI/RFI filtration; RJ11/RJ45 combo data line protection (1-In / 1-Out)
   Management: RMCARD205 (pre-installed in expansion slot), USB (HID), Serial, Dry contacts / Relay, EPO
-  RMCARD205 is modeled as a module installed in the Expansion Slot module bay; its network and sensor ports belong to the RMCARD205 module type.
+  RMCARD205 is modeled as a module installed in the Expansion Slot module bay; its network management interface belongs to the RMCARD205 module type (the ENVIROSENSOR universal port is noted there but not modeled as an interface).
   Software: PowerPanel Business Edition; upgradeable firmware
   Dimensions (WxHxD): 432 x 89 x 429 mm (17 x 3.5 x 16.9 in)
   Thermal: 478 BTU/hr online, 207 BTU/hr ECO mode

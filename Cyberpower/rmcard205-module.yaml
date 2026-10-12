@@ -1,0 +1,35 @@
+---
+manufacturer: CyberPower
+model: RMCARD205
+part_number: RMCARD205
+weight: 0.036
+weight_unit: kg
+description: Network management card for CyberPower Smart App UPS and ATS PDU expansion slots
+comments: |
+  Internal remote management card for select CyberPower PR/OL/OR series UPS
+  systems and ATS PDUs with an expansion slot. See the CyberPower RMCARD
+  Reference Guide for the full list of supported models.
+
+  Management: HTTP/HTTPS, Telnet/SSH CLI, SNMPv1/v3 (MIB RFC 1213, RFC 1628).
+  Notifications: email (SMTP/SMTPS), SMS, SNMP traps, Syslog (RFC 5424).
+  Authentication: local, RADIUS, LDAP, LDAPS, Windows Active Directory.
+  Other: DHCP, DNS, NTP, IPv4/IPv6, Cisco EnergyWise v1.2.0 and newer.
+  Firmware: upgradeable via FTP or SCP; bulk upgrade and config via the
+  Upgrade and Configuration Utility.
+  Shutdown integration: PowerPanel Business Edition Client.
+
+  Universal port (RJ-45 form factor): for the optional ENVIROSENSOR
+  (temperature and humidity). Not an Ethernet port, so it is not modeled
+  as an interface.
+
+  LEDs: Link, Tx/Rx.
+  Dimensions (WxHxD): 54 x 36.06 x 76.2 mm (2.13 x 1.42 x 3 in).
+  Operating: 0 to 40 C, 0 to 90% RH non-condensing, up to 3000 m.
+  Certifications: FCC DoC Class A, RoHS.
+  Warranty: 3 years limited; optional extended warranty WEXT5YR-ACC1A.
+
+  Source: CyberPower RMCARD205 Remote Management Card datasheet (c) 2020.
+interfaces:
+  - name: Network Management
+    type: 100base-tx
+    mgmt_only: true
